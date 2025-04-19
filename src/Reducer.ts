@@ -66,7 +66,7 @@ export const taskReducer = (
 						? { ...todo, todo: action.payload.newTaskValue }
 						: todo
 				),
-				completed: state.active.map((todo) =>
+				completed: state.completed.map((todo) =>
 					todo.id === action.payload.id
 						? { ...todo, todo: action.payload.newTaskValue }
 						: todo
